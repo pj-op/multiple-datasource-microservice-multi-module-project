@@ -13,6 +13,7 @@
         <maven.compiler.target>11</maven.compiler.target>
         <spring.boot.dependency.version>2.6.0</spring.boot.dependency.version>
         <spring-cloud.version>2021.0.0-RC1</spring-cloud.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencyManagement>
         <dependencies>
