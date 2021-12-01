@@ -1,0 +1,24 @@
+#server:
+#  port: 8091
+spring:
+  h2:
+    console:
+      enabled: true
+  data:
+    mongodb:
+      authentication-database: admin
+      username: myUserAdmin
+      password: root
+      database: test
+      port: 27017
+      host: localhost
+  jpa:
+    defer-datasource-initialization: true
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+logging:
+  file:
+    name: "C:\\Application Logs\\actorservice_logs\\actor-service-app-log.log"

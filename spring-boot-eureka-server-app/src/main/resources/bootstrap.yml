@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: eureka-server-app
+  cloud:
+    config:
+      uri: http://localhost:8090
