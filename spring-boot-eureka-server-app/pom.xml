@@ -8,7 +8,6 @@
         <artifactId>spring-boot-microservice-application</artifactId>
         <version>0.1</version>
     </parent>
-    <groupId>com.ms</groupId>
     <artifactId>spring-boot-eureka-server-app</artifactId>
     <version>0.1</version>
     <name>spring-boot-eureka-server-app</name>
