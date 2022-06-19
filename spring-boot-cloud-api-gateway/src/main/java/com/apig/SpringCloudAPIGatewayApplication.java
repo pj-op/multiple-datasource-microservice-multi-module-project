@@ -14,7 +14,7 @@ public class SpringCloudAPIGatewayApplication {
     @Bean
     public RouteLocator routeLocator(RouteLocatorBuilder routeLocatorBuilder) {
         return routeLocatorBuilder.routes()
-                .route("multipleDataSource", r -> r.path("/api/**")
+                .route("multiple-datasource", r -> r.path("/api/**")
 //                        .and()
 //                        .query("platform", "mobile")
                         .uri("lb://MULTIPLE-DATASOURCE"))

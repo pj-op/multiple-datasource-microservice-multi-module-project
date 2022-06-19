@@ -14,18 +14,20 @@ import org.springframework.web.client.RestTemplate;
 @RequestMapping(value = "/client-api")
 public class Client_ActorController {
 
+    private static final String SERVICE_NAME = "API-GATEWAY-APP";
+
     @Autowired
     public RestTemplate restTemplate;
 
     @GetMapping(value = "/actors/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Actor> findActorById(@PathVariable(name = "id") int id) {
-        Actor actor = restTemplate.getForObject("http://API-G/api/actors/" + id, Actor.class);
+        Actor actor = restTemplate.getForObject("http://" + SERVICE_NAME + "/api/actors/" + id, Actor.class);
         return ResponseEntity.ok(actor);
     }
 
     @GetMapping(value = "/actors", produces = MediaType.APPLICATION_JSON_VALUE)
     public Actor[] allActors() {
-        ResponseEntity<Actor[]> actorList = restTemplate.getForEntity("http://API-G/api/actors/", Actor[].class);
+        ResponseEntity<Actor[]> actorList = restTemplate.getForEntity("http://" + SERVICE_NAME + "/api/actors/", Actor[].class);
         return actorList.getBody();
     }
 

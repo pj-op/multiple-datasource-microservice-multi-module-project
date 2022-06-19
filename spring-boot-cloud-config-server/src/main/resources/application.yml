@@ -5,6 +5,6 @@ spring:
     config:
       server:
         git:
-          uri: https://pj-op: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@github.com/pj-op/spring-cloud-config-configurations.git
+          uri: https://pj-op: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@github.com/pj-op/spring-cloud-config-configurations.git
 #Private Git repo with personal access token:
-#         https://<username>:<personal-access-token>&github.com/pj-op/spring-cloud-config-configurations.git
+#         https://<username>:<personal-access-token>@github.com/pj-op/spring-cloud-config-configurations.git

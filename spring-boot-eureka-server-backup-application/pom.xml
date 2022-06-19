@@ -8,18 +8,15 @@
         <artifactId>spring-boot-microservice-application</artifactId>
         <version>0.1</version>
     </parent>
-    <artifactId>spring-boot-multiple-datasource-client-app</artifactId>
+    <groupId>com.eureka_backup</groupId>
+    <artifactId>spring-boot-eureka-server-backup-application</artifactId>
     <version>0.1</version>
-    <name>spring-boot-multiple-datasource-client-app</name>
+    <name>spring-boot-eureka-server-backup-application</name>
     <url>http://maven.apache.org</url>
     <dependencies>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -27,7 +24,7 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
     </dependencies>
 </project>
